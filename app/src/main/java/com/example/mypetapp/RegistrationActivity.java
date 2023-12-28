@@ -9,6 +9,7 @@ import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -26,6 +27,7 @@ public class RegistrationActivity extends AppCompatActivity {
     TextView signIn;
     FirebaseAuth auth;
     FirebaseDatabase database;
+    ProgressBar progressBar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +36,9 @@ public class RegistrationActivity extends AppCompatActivity {
 
         auth = FirebaseAuth.getInstance();
         database = FirebaseDatabase.getInstance();
+
+        progressBar = findViewById(R.id.progressbar);
+        progressBar.setVisibility(View.GONE);
 
         signUp = findViewById(R.id.login_btn);
         name = findViewById(R.id.name);
@@ -52,6 +57,7 @@ public class RegistrationActivity extends AppCompatActivity {
             public void onClick(View view) {
 
                 createUser();
+                progressBar.setVisibility(View.VISIBLE);
 
             }
         });
@@ -88,9 +94,11 @@ public class RegistrationActivity extends AppCompatActivity {
                     UserModel userModel = new UserModel(userName,userEmail,userPassword);
                     String id = task.getResult().getUser().getUid();
                     database.getReference().child("Users").child(id).setValue(userModel);
+                    progressBar.setVisibility(View.GONE);
                     Toast.makeText(RegistrationActivity.this, "Registro Exitoso", Toast.LENGTH_SHORT).show();
                 }
                 else {
+                    progressBar.setVisibility(View.GONE);
                     Toast.makeText(RegistrationActivity.this, "Error:"+task.getException(), Toast.LENGTH_SHORT).show();
                 }
             }
