@@ -13,11 +13,13 @@
         android:theme="@style/Theme.MyPetApp"
         tools:targetApi="34">
         <activity
-            android:name=".RegistrationActivity"
-            android:exported="false">
-        </activity>
+            android:name=".activities.HomeActivity"
+            android:exported="false" />
         <activity
-            android:name=".LoginActivity"
+            android:name=".activities.RegistrationActivity"
+            android:exported="false"></activity>
+        <activity
+            android:name=".activities.LoginActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
