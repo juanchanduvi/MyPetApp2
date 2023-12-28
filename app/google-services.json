@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "916235751293",
+    "firebase_url": "https://mypetapp-86854-default-rtdb.firebaseio.com",
+    "project_id": "mypetapp-86854",
+    "storage_bucket": "mypetapp-86854.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:916235751293:android:d722096e0865561ba38614",
+        "android_client_info": {
+          "package_name": "com.example.mypet"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCiD5UAtW4IPaZEmhKAOm6GJRs3DJ-7GZc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:916235751293:android:90891fbf05deb476a38614",
+        "android_client_info": {
+          "package_name": "com.example.mypetapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCiD5UAtW4IPaZEmhKAOm6GJRs3DJ-7GZc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
