@@ -76,7 +76,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:fontFamily="@font/alice"
-                android:text="Explora Productos"
+                android:text="Explora nuestras categorías"
                 android:textColor="#706F6F"
                 android:textSize="18sp"
                 android:textStyle="bold" />
@@ -114,7 +114,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:fontFamily="@font/alice"
-                android:text="Recomendaciones"
+                android:text="Mascotitas en Adopción"
                 android:textColor="#706F6F"
                 android:textSize="18sp"
                 android:textStyle="bold" />
